@@ -1,0 +1,160 @@
+;
+; Archive created at 2022-01-23 00:50:56 +04
+;     dbname: jmdict0122
+;     TOC Entries: 149
+;     Compression: -1
+;     Dump Version: 1.13-0
+;     Format: CUSTOM
+;     Integer: 4 bytes
+;     Offset: 8 bytes
+;     Dumped from database version: 10.19 (Ubuntu 10.19-0ubuntu0.18.04.1)
+;     Dumped by pg_dump version: 10.19 (Ubuntu 10.19-0ubuntu0.18.04.1)
+;
+;
+; Selected TOC Entries:
+;
+; 3; 2615 2200 SCHEMA - public postgres
+; 3116; 0 0 COMMENT - SCHEMA public postgres
+1; 3079 13041 EXTENSION - plpgsql 
+3117; 0 0 COMMENT - EXTENSION plpgsql 
+210; 1259 29492 TABLE public conj_prop ichiran
+209; 1259 29490 SEQUENCE public conj_prop_id_seq ichiran
+3118; 0 0 SEQUENCE OWNED BY public conj_prop_id_seq ichiran
+212; 1259 29509 TABLE public conj_source_reading ichiran
+211; 1259 29507 SEQUENCE public conj_source_reading_id_seq ichiran
+3119; 0 0 SEQUENCE OWNED BY public conj_source_reading_id_seq ichiran
+208; 1259 29472 TABLE public conjugation ichiran
+207; 1259 29470 SEQUENCE public conjugation_id_seq ichiran
+3120; 0 0 SEQUENCE OWNED BY public conjugation_id_seq ichiran
+196; 1259 29367 TABLE public entry ichiran
+204; 1259 29431 TABLE public gloss ichiran
+203; 1259 29429 SEQUENCE public gloss_id_seq ichiran
+3121; 0 0 SEQUENCE OWNED BY public gloss_id_seq ichiran
+200; 1259 29397 TABLE public kana_text ichiran
+199; 1259 29395 SEQUENCE public kana_text_id_seq ichiran
+3122; 0 0 SEQUENCE OWNED BY public kana_text_id_seq ichiran
+216; 1259 29896 TABLE public kanji ichiran
+215; 1259 29894 SEQUENCE public kanji_id_seq ichiran
+3123; 0 0 SEQUENCE OWNED BY public kanji_id_seq ichiran
+198; 1259 29377 TABLE public kanji_text ichiran
+197; 1259 29375 SEQUENCE public kanji_text_id_seq ichiran
+3124; 0 0 SEQUENCE OWNED BY public kanji_text_id_seq ichiran
+222; 1259 29952 TABLE public meaning ichiran
+221; 1259 29950 SEQUENCE public meaning_id_seq ichiran
+3125; 0 0 SEQUENCE OWNED BY public meaning_id_seq ichiran
+220; 1259 29935 TABLE public okurigana ichiran
+219; 1259 29933 SEQUENCE public okurigana_id_seq ichiran
+3126; 0 0 SEQUENCE OWNED BY public okurigana_id_seq ichiran
+218; 1259 29915 TABLE public reading ichiran
+217; 1259 29913 SEQUENCE public reading_id_seq ichiran
+3127; 0 0 SEQUENCE OWNED BY public reading_id_seq ichiran
+214; 1259 29526 TABLE public restricted_readings ichiran
+213; 1259 29524 SEQUENCE public restricted_readings_id_seq ichiran
+3128; 0 0 SEQUENCE OWNED BY public restricted_readings_id_seq ichiran
+202; 1259 29417 TABLE public sense ichiran
+201; 1259 29415 SEQUENCE public sense_id_seq ichiran
+3129; 0 0 SEQUENCE OWNED BY public sense_id_seq ichiran
+206; 1259 29448 TABLE public sense_prop ichiran
+205; 1259 29446 SEQUENCE public sense_prop_id_seq ichiran
+3130; 0 0 SEQUENCE OWNED BY public sense_prop_id_seq ichiran
+2880; 2604 29495 DEFAULT public conj_prop id ichiran
+2881; 2604 29512 DEFAULT public conj_source_reading id ichiran
+2879; 2604 29475 DEFAULT public conjugation id ichiran
+2877; 2604 29434 DEFAULT public gloss id ichiran
+2875; 2604 29400 DEFAULT public kana_text id ichiran
+2883; 2604 29899 DEFAULT public kanji id ichiran
+2874; 2604 29380 DEFAULT public kanji_text id ichiran
+2886; 2604 29955 DEFAULT public meaning id ichiran
+2885; 2604 29938 DEFAULT public okurigana id ichiran
+2884; 2604 29918 DEFAULT public reading id ichiran
+2882; 2604 29529 DEFAULT public restricted_readings id ichiran
+2876; 2604 29420 DEFAULT public sense id ichiran
+2878; 2604 29451 DEFAULT public sense_prop id ichiran
+3097; 0 29492 TABLE DATA public conj_prop ichiran
+3099; 0 29509 TABLE DATA public conj_source_reading ichiran
+3095; 0 29472 TABLE DATA public conjugation ichiran
+3083; 0 29367 TABLE DATA public entry ichiran
+3091; 0 29431 TABLE DATA public gloss ichiran
+3087; 0 29397 TABLE DATA public kana_text ichiran
+3103; 0 29896 TABLE DATA public kanji ichiran
+3085; 0 29377 TABLE DATA public kanji_text ichiran
+3109; 0 29952 TABLE DATA public meaning ichiran
+3107; 0 29935 TABLE DATA public okurigana ichiran
+3105; 0 29915 TABLE DATA public reading ichiran
+3101; 0 29526 TABLE DATA public restricted_readings ichiran
+3089; 0 29417 TABLE DATA public sense ichiran
+3093; 0 29448 TABLE DATA public sense_prop ichiran
+3131; 0 0 SEQUENCE SET public conj_prop_id_seq ichiran
+3132; 0 0 SEQUENCE SET public conj_source_reading_id_seq ichiran
+3133; 0 0 SEQUENCE SET public conjugation_id_seq ichiran
+3134; 0 0 SEQUENCE SET public gloss_id_seq ichiran
+3135; 0 0 SEQUENCE SET public kana_text_id_seq ichiran
+3136; 0 0 SEQUENCE SET public kanji_id_seq ichiran
+3137; 0 0 SEQUENCE SET public kanji_text_id_seq ichiran
+3138; 0 0 SEQUENCE SET public meaning_id_seq ichiran
+3139; 0 0 SEQUENCE SET public okurigana_id_seq ichiran
+3140; 0 0 SEQUENCE SET public reading_id_seq ichiran
+3141; 0 0 SEQUENCE SET public restricted_readings_id_seq ichiran
+3142; 0 0 SEQUENCE SET public sense_id_seq ichiran
+3143; 0 0 SEQUENCE SET public sense_prop_id_seq ichiran
+2918; 2606 29500 CONSTRAINT public conj_prop conj_prop_pkey ichiran
+2921; 2606 29517 CONSTRAINT public conj_source_reading conj_source_reading_pkey ichiran
+2914; 2606 29477 CONSTRAINT public conjugation conjugation_pkey ichiran
+2888; 2606 29374 CONSTRAINT public entry entry_pkey ichiran
+2905; 2606 29439 CONSTRAINT public gloss gloss_pkey ichiran
+2898; 2606 29405 CONSTRAINT public kana_text kana_text_pkey ichiran
+2928; 2606 29904 CONSTRAINT public kanji kanji_pkey ichiran
+2892; 2606 29385 CONSTRAINT public kanji_text kanji_text_pkey ichiran
+2946; 2606 29960 CONSTRAINT public meaning meaning_pkey ichiran
+2942; 2606 29943 CONSTRAINT public okurigana okurigana_pkey ichiran
+2937; 2606 29923 CONSTRAINT public reading reading_pkey ichiran
+2923; 2606 29534 CONSTRAINT public restricted_readings restricted_readings_pkey ichiran
+2902; 2606 29422 CONSTRAINT public sense sense_pkey ichiran
+2908; 2606 29456 CONSTRAINT public sense_prop sense_prop_pkey ichiran
+2916; 1259 29501 INDEX public conj_prop_conj_id_index ichiran
+2919; 1259 29518 INDEX public conj_source_reading_conj_id_text_index ichiran
+2912; 1259 29479 INDEX public conjugation_from_index ichiran
+2915; 1259 29478 INDEX public conjugation_seq_index ichiran
+2906; 1259 29440 INDEX public gloss_sense_id_index ichiran
+2895; 1259 29409 INDEX public kana_text_common_index ichiran
+2896; 1259 29407 INDEX public kana_text_ord_index ichiran
+2899; 1259 29406 INDEX public kana_text_seq_index ichiran
+2900; 1259 29408 INDEX public kana_text_text_index ichiran
+2925; 1259 29910 INDEX public kanji_freq_index ichiran
+2926; 1259 29908 INDEX public kanji_grade_index ichiran
+2929; 1259 29906 INDEX public kanji_radical_c_index ichiran
+2930; 1259 29907 INDEX public kanji_radical_n_index ichiran
+2931; 1259 29911 INDEX public kanji_stat_common_index ichiran
+2932; 1259 29912 INDEX public kanji_stat_irregular_index ichiran
+2933; 1259 29909 INDEX public kanji_strokes_index ichiran
+2889; 1259 29389 INDEX public kanji_text_common_index ichiran
+2934; 1259 29905 INDEX public kanji_text_index ichiran
+2890; 1259 29387 INDEX public kanji_text_ord_index ichiran
+2893; 1259 29386 INDEX public kanji_text_seq_index ichiran
+2894; 1259 29388 INDEX public kanji_text_text_index ichiran
+2944; 1259 29961 INDEX public meaning_kanji_id_index ichiran
+2947; 1259 29962 INDEX public meaning_text_index ichiran
+2943; 1259 29944 INDEX public okurigana_reading_id_index ichiran
+2935; 1259 29924 INDEX public reading_kanji_id_index ichiran
+2938; 1259 29927 INDEX public reading_stat_common_index ichiran
+2939; 1259 29926 INDEX public reading_text_index ichiran
+2940; 1259 29925 INDEX public reading_type_index ichiran
+2924; 1259 29535 INDEX public restricted_readings_seq_reading_index ichiran
+2909; 1259 29457 INDEX public sense_prop_sense_id_tag_index ichiran
+2910; 1259 29459 INDEX public sense_prop_seq_tag_text_index ichiran
+2911; 1259 29458 INDEX public sense_prop_tag_text_index ichiran
+2903; 1259 29423 INDEX public sense_seq_index ichiran
+2956; 2606 29502 FK CONSTRAINT public conj_prop conj_prop_conjugation_conj_id_foreign ichiran
+2957; 2606 29519 FK CONSTRAINT public conj_source_reading conj_source_reading_conjugation_conj_id_foreign ichiran
+2955; 2606 29485 FK CONSTRAINT public conjugation conjugation_entry_from_foreign ichiran
+2954; 2606 29480 FK CONSTRAINT public conjugation conjugation_entry_seq_foreign ichiran
+2951; 2606 29441 FK CONSTRAINT public gloss gloss_sense_sense_id_foreign ichiran
+2949; 2606 29410 FK CONSTRAINT public kana_text kana_text_entry_seq_foreign ichiran
+2948; 2606 29390 FK CONSTRAINT public kanji_text kanji_text_entry_seq_foreign ichiran
+2961; 2606 29963 FK CONSTRAINT public meaning meaning_kanji_kanji_id_foreign ichiran
+2960; 2606 29945 FK CONSTRAINT public okurigana okurigana_reading_reading_id_foreign ichiran
+2959; 2606 29928 FK CONSTRAINT public reading reading_kanji_kanji_id_foreign ichiran
+2958; 2606 29536 FK CONSTRAINT public restricted_readings restricted_readings_entry_seq_foreign ichiran
+2950; 2606 29424 FK CONSTRAINT public sense sense_entry_seq_foreign ichiran
+2952; 2606 29460 FK CONSTRAINT public sense_prop sense_prop_entry_seq_foreign ichiran
+2953; 2606 29465 FK CONSTRAINT public sense_prop sense_prop_sense_sense_id_foreign ichiran
