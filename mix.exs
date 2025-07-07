@@ -23,7 +23,10 @@ defmodule Ichi.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:telemetry, "~> 1.3.0"}
+      {:telemetry, "~> 1.3.0"},
+      {:bandit, "~> 1.7"},
+      {:finch, "~> 0.20.0"},
+      {:peep, "~> 4.0"}
     ]
   end
 end
