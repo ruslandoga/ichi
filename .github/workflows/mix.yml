@@ -1,0 +1,40 @@
+name: mix
+
+on:
+  pull_request:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    env:
+      MIX_ENV: test
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - id: beam
+        uses: erlef/setup-elixir@v1
+        with:
+          version-file: .tool-versions
+          version-type: strict
+
+      - uses: actions/cache@v4
+        with:
+          path: |
+            deps
+            _build
+          key: test-${{ steps.beam.outputs.elixir-version }}-${{ github.head_ref || github.ref }}-${{ hashFiles('**/mix.lock') }}
+          restore-keys: |
+            test-${{ steps.beam.outputs.elixir-version }}-${{ github.head_ref || github.ref }}-
+            test-${{ steps.beam.outputs.elixir-version }}-refs/heads/main-
+
+      - run: mix deps.get --only=$MIX_ENV
+      - run: mix compile --warnings-as-errors
+      - run: mix format --check-formatted
+      - run: mix deps.unlock --check-unused
+      - run: mix test --include slow
