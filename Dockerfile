@@ -35,7 +35,7 @@ RUN mix release
 # APP #
 #######
 
-FROM alpine:3.22.0 AS app
+FROM alpine:3.22.1 AS app
 
 RUN adduser -S -H -u 999 -G nogroup ichi
 RUN apk add --no-cache --update openssl libgcc libstdc++ ncurses
